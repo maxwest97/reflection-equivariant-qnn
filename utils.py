@@ -87,7 +87,7 @@ def permute(i,n,c):
 
     if c == 3:
 
-        if i >= n**2 / 2 and i < 3*n**2 + n**2 /2:
+        if i >= n**2/2 and i < 3*n**2 + n**2/2:
 
             if (i - n**2/2) % n < n/2:
                 result = int(n**2/2 + ((i - n**2/2)//n)*n/2 + ((i - n**2/2)%n))
