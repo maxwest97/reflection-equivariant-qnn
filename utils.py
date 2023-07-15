@@ -1,3 +1,8 @@
+'''
+               Max West
+    https://arxiv.org/abs/2212.00264
+'''
+
 from pennylane import numpy as np
 from numba import vectorize
 from numba.types import int64
