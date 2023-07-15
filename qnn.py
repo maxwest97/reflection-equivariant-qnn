@@ -61,7 +61,7 @@ def circuit(weights, x):
 def acc(weights, data, labels, num_processes, i):
     
     box    = int(len(data)/num_processes)
-    X = data[i*box:(i+1)*box] 
+    X      = data[i*box:(i+1)*box] 
     preds  = np.argmax(np.array(circuit(weights, X)).transpose(), axis=1) 
     labels = labels[i*box:(i+1)*box]
     return len(labels[labels==preds])
